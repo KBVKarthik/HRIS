@@ -1,0 +1,32 @@
+{
+  "name": "hris",
+  "version": "1.0.0",
+  "description": "Human Resources Information System - Complete HRIS Solution",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ..",
+    "backend:install": "cd backend && npm install && cd ..",
+    "frontend:install": "cd frontend && npm install && cd ..",
+    "backend:start": "cd backend && npm start",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:start": "cd frontend && npm start",
+    "init:db": "cd backend && npm run init:db",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\""
+  },
+  "keywords": [
+    "HRIS",
+    "HR",
+    "Human Resources",
+    "Employee Management"
+  ],
+  "author": "HRIS Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": "14.0.0",
+    "npm": "6.0.0"
+  }
+}
